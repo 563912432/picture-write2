@@ -21,7 +21,7 @@ export default {
   name: 'd',
   data () {
     return {
-      host: 'http://192.168.1.17/',
+      host: '/',
       cid: '',
       loading: false,
       img: null,

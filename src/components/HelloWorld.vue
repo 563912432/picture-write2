@@ -20,7 +20,7 @@
 import footer from '@/components/footer'
 import header from '@/components/header'
 
-const Host = 'http://192.168.1.17/Api/Pinyin/'
+const Host = '/Api/Pinyin/'
 
 export default {
   name: 'HelloWorld',
