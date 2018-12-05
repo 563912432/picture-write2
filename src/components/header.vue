@@ -1,11 +1,23 @@
 <template>
   <div class="v-header">
-    <img src="../assets/header.png" alt="">
+    <img src="../assets/header.png" @click="toUrl" alt="">
   </div>
 </template>
 <script>
 export default {
-  name: 'v-header'
+  name: 'v-header',
+  props: {
+    url: {
+      type: String
+    }
+  },
+  methods: {
+    toUrl: function () {
+      if (this.url) {
+        this.$router.push(`/introduce/${this.url}`)
+      }
+    }
+  }
 }
 </script>
 <style scoped>
